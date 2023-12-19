@@ -83,6 +83,13 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 == ChangeLog ==
 
+= 1.0.1 =
+
+* Fix deprecated create_function
+* Verzeichnistitel nun H2 Format zur besseren Anpassung
+* Textanpassungen
+* Bessere Code-Strukturierung
+
 = 1.0.0 =
 
 *PSOURCE RELEASE

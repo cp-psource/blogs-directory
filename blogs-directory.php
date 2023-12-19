@@ -379,7 +379,7 @@ function blogs_directory_output($content) {
 			$content .= '<table border="0" border="0" cellpadding="2px" cellspacing="2px" width="100%" bgcolor="" class="blogs_directory_table">';
 				$content .= '<tr>';
 					$content .= '<th style="background-color:' . $blogs_directory_background_color . '; border-bottom-style:solid; border-bottom-color:' . $blogs_directory_border_color . '; border-bottom-width:1px; font-size:12px;" width="10%"> </th>';
-					$content .= '<th style="background-color:' . $blogs_directory_background_color . '; border-bottom-style:solid; border-bottom-color:' . $blogs_directory_border_color . '; border-bottom-width:1px; font-size:12px;" width="90%"><center><strong>' .  $blogs_directory_title_blogs_page . '</strong></center></th>';
+					$content .= '<th style="background-color:' . $blogs_directory_background_color . '; border-bottom-style:solid; border-bottom-color:' . $blogs_directory_border_color . '; border-bottom-width:1px; font-size:12px;" width="90%"><center><h2>' .  $blogs_directory_title_blogs_page . '</h2></center></th>';
 				$content .= '</tr>';
 				//=================================//
 				$avatar_default = get_option('avatar_default');
@@ -543,85 +543,86 @@ function blogs_directory_output($content) {
 		}
     }
 
-    //sort blogs by percent
-    if ( 1 < count( $blogs ) ) {
-        $fn = create_function( '$a, $b', '
-        if( $a["percent"] == $b["percent"] ) return 0;
-        return ( $a["percent"] > $b["percent"] ) ? -1 : 1;
-        ');
+    // sort blogs by percent
+	if (count($blogs) > 1) {
+    	$fn = function ($a, $b) {
+        	if ($a["percent"] == $b["percent"]) {
+            	return 0;
+        	}
+        	return ($a["percent"] > $b["percent"]) ? -1 : 1;
+    		};
+    		usort($blogs, $fn);
+		}
+	}
 
-        usort( $blogs, $fn );
-    }
-}
-
-			//=====================================//
-			$search_form_content = blogs_directory_search_form_output('', $blogs_directory['phrase']);
-			if ( !empty( $blogs ) ) {
-				if ( count( $blogs ) < $blogs_directory_per_page ) {
-					$next = 'no';
-				} else {
-					$next = 'yes';
-				}
-
-                //since it broken because it always displays all, i will disable pagination
-                $next = 'no';
-				$navigation_content = blogs_directory_search_navigation_output('', $blogs_directory_per_page, $blogs_directory['page'], $blogs_directory['phrase'], $next);
-			}
-			$content .= $search_form_content;
-			$content .= '<br />';
-			if ( !empty( $blogs ) ) {
-				$content .= $navigation_content;
-			}
-			$content .= '<div style="float:left; width:100%">';
-			$content .= '<table border="0" border="0" cellpadding="2px" cellspacing="2px" width="100%" bgcolor="" class="blogs_directory_search_table">';
-				$content .= '<tr>';
-					$content .= '<th style="background-color:' . $blogs_directory_background_color . '; border-bottom-style:solid; border-bottom-color:' . $blogs_directory_border_color . '; border-bottom-width:1px; font-size:12px;" width="10%"> </td>';
-					$content .= '<th style="background-color:' . $blogs_directory_background_color . '; border-bottom-style:solid; border-bottom-color:' . $blogs_directory_border_color . '; border-bottom-width:1px; font-size:12px;" width="90%"><center><strong>' .  $blogs_directory_title_blogs_page . '</strong></center></td>';
-				$content .= '</tr>';
-				//=================================//
-				$avatar_default = get_option('avatar_default');
-				$tic_toc = 'toc';
-				//=================================//
-				if ( !empty( $blogs ) ) {
-					foreach ($blogs as $blog){
-						//=============================//
-						if ($tic_toc == 'toc'){
-							$tic_toc = 'tic';
-						} else {
-							$tic_toc = 'toc';
-						}
-						if ($tic_toc == 'tic'){
-							$bg_color = $blogs_directory_alternate_background_color;
-						} else {
-							$bg_color = $blogs_directory_background_color;
-						}
-						//=============================//
-						$content .= '<tr>';
-							if ( function_exists('get_blog_avatar') ) {
-								$content .= '<td style="background-color:' . $bg_color . '; padding-top:10px;" valign="top" width="10%"><center><a style="text-decoration:none;" href="http://' . $blog['domain'] . $blog['path'] . '">' . get_blog_avatar($blog['blog_id'], 32, $avatar_default) . '</a></center></td>';
-							} else {
-								$content .= '<td style="background-color:' . $bg_color . '; padding-top:10px;" valign="top" width="10%"></td>';
-							}
-							$content .= '<td style="background-color:' . $bg_color . ';" width="90%">';
-                            $content .= '<a style="text-decoration:none; font-size:1.5em; margin-left:20px;" href="http://' . $blog['domain'] . $blog['path'] . '">' . $blog['blogname'] . '</a><br />';
-							$content .= '<span class="blogs_dir_search_blog_description" style="font-size: 12px; color: #9D88B0" >' . $blog['blogdescription'] . '</span>';
-							$content .= '</td>';
-						$content .= '</tr>';
-					}
-				} else {
-					$content .= '<tr>';
-						$content .= '<td style="background-color:' . $bg_color . '; padding-top:10px;" valign="top" width="10%"></td>';
-						$content .= '<td style="background-color:' . $bg_color . ';" width="90%">' . __('Keine Ergebnisse...','blogs-directory') . '</td>';
-					$content .= '</tr>';
-				}
-				//=================================//
-			$content .= '</table>';
-			$content .= '</div>';
-			if ( !empty( $blogs ) ) {
-				$content .= $navigation_content;
-			}
+	//=====================================//
+	$search_form_content = blogs_directory_search_form_output('', $blogs_directory['phrase']);
+	if ( !empty( $blogs ) ) {
+		if ( count( $blogs ) < $blogs_directory_per_page ) {
+			$next = 'no';
 		} else {
-			$content = __('Ungültige Seite.','blogs-directory');
+			$next = 'yes';
+		}
+
+        //since it broken because it always displays all, i will disable pagination
+        $next = 'no';
+		$navigation_content = blogs_directory_search_navigation_output('', $blogs_directory_per_page, $blogs_directory['page'], $blogs_directory['phrase'], $next);
+	}
+	$content .= $search_form_content;
+	$content .= '<br />';
+	if ( !empty( $blogs ) ) {
+		$content .= $navigation_content;
+	}
+	$content .= '<div style="float:left; width:100%">';
+	$content .= '<table border="0" border="0" cellpadding="2px" cellspacing="2px" width="100%" bgcolor="" class="blogs_directory_search_table">';
+	$content .= '<tr>';
+	$content .= '<th style="background-color:' . $blogs_directory_background_color . '; border-bottom-style:solid; border-bottom-color:' . $blogs_directory_border_color . '; border-bottom-width:1px; font-size:12px;" width="10%"> </td>';
+	$content .= '<th style="background-color:' . $blogs_directory_background_color . '; border-bottom-style:solid; border-bottom-color:' . $blogs_directory_border_color . '; border-bottom-width:1px; font-size:12px;" width="90%"><center><strong>' .  $blogs_directory_title_blogs_page . '</strong></center></td>';
+	$content .= '</tr>';
+	//=================================//
+	$avatar_default = get_option('avatar_default');
+	$tic_toc = 'toc';
+	//=================================//
+	if ( !empty( $blogs ) ) {
+		foreach ($blogs as $blog){
+			//=============================//
+			if ($tic_toc == 'toc'){
+				$tic_toc = 'tic';
+			} else {
+				$tic_toc = 'toc';
+			}
+			if ($tic_toc == 'tic'){
+				$bg_color = $blogs_directory_alternate_background_color;
+			} else {
+				$bg_color = $blogs_directory_background_color;
+			}
+			//=============================//
+			$content .= '<tr>';
+			if ( function_exists('get_blog_avatar') ) {
+				$content .= '<td style="background-color:' . $bg_color . '; padding-top:10px;" valign="top" width="10%"><center><a style="text-decoration:none;" href="http://' . $blog['domain'] . $blog['path'] . '">' . get_blog_avatar($blog['blog_id'], 32, $avatar_default) . '</a></center></td>';
+			} else {
+				$content .= '<td style="background-color:' . $bg_color . '; padding-top:10px;" valign="top" width="10%"></td>';
+			}
+			$content .= '<td style="background-color:' . $bg_color . ';" width="90%">';
+            $content .= '<a style="text-decoration:none; font-size:1.5em; margin-left:20px;" href="http://' . $blog['domain'] . $blog['path'] . '">' . $blog['blogname'] . '</a><br />';
+			$content .= '<span class="blogs_dir_search_blog_description" style="font-size: 12px; color: #9D88B0" >' . $blog['blogdescription'] . '</span>';
+			$content .= '</td>';
+			$content .= '</tr>';
+		}
+	} else {
+		$content .= '<tr>';
+		$content .= '<td style="background-color:' . $bg_color . '; padding-top:10px;" valign="top" width="10%"></td>';
+		$content .= '<td style="background-color:' . $bg_color . ';" width="90%">' . __('Keine Ergebnisse...','blogs-directory') . '</td>';
+		$content .= '</tr>';
+	}
+	//=================================//
+	$content .= '</table>';
+	$content .= '</div>';
+	if ( !empty( $blogs ) ) {
+		$content .= $navigation_content;
+	}
+	} else {
+		$content = __('Ungültige Seite.','blogs-directory');
 		}
 	}
 	return $content;
