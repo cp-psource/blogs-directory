@@ -17,7 +17,7 @@ Standardmäßig übernimmt MS-Blogs-Verzeichnis Stilelemente aus Deinem Design, 
 
 ### Mache mehr mit PSOURCE
 
-Kombiniere Blogs-Verzeichnis mit anderen Premium-Plugins und erhalten Sie mehr. Aktiviere [Bloghosting](https://n3rds.work/piestingtal_source/ps-bloghosting-multisite-next-level-plugin/) und beschränke Deine Webseiten-Liste nur auf kostenpflichtige Blogs oder installiere [Avatare](http://n3rds. work/piestingtal_source/avatars/) und zeige einen Blog-Avatar für jede Webseite in Deinem Verzeichnis an.
+Kombiniere Blogs-Verzeichnis mit anderen Premium-Plugins und erhalten Sie mehr. Aktiviere [Bloghosting](https://n3rds.work/piestingtal_source/ps-bloghosting-multisite-next-level-plugin/) und beschränke Deine Webseiten-Liste nur auf kostenpflichtige Blogs oder installiere [Avatare](https://n3rds. work/piestingtal_source/avatars/) und zeige einen Blog-Avatar für jede Webseite in Deinem Verzeichnis an.
 
 ![Nahtlose Pro Sites-Integration](https://n3rds.work/wp-content/uploads/2023/12/pro-sites-integration.jpg)
 
