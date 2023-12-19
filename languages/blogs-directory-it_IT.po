@@ -1,0 +1,239 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogs-Verzeichnis\n"
+"POT-Creation-Date: 2023-12-19 18:13+0100\n"
+"PO-Revision-Date: 2023-12-19 18:14+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: blogs-directory.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: psource/psource-plugin-update/vendor\n"
+
+#: blogs-directory.php:71
+#, fuzzy
+msgid "Webseiten-Verzeichnis"
+msgstr "Elenco dei siti web"
+
+#: blogs-directory.php:113
+#, fuzzy
+msgid "Sites"
+msgstr "Siti"
+
+#: blogs-directory.php:136
+#, fuzzy
+msgid "Einstellungen gespeichert."
+msgstr "Impostazioni salvate."
+
+#: blogs-directory.php:139
+#, fuzzy, php-format
+msgid "Fehler: %s"
+msgstr "Errore: %s"
+
+#: blogs-directory.php:144
+#, fuzzy
+msgid "Seiten-Verzeichnis Einstellungen"
+msgstr "Impostazioni della directory della pagina"
+
+#: blogs-directory.php:149
+#, fuzzy
+msgid "Sort By"
+msgstr "Ordina per"
+
+#: blogs-directory.php:152
+#, fuzzy
+msgid "Seitenname (A-Z)"
+msgstr "Nome della pagina (A-Z)"
+
+#: blogs-directory.php:153
+#, fuzzy
+msgid "Neueste"
+msgstr "Più recente"
+
+#: blogs-directory.php:154
+msgid "Zuletzt aktualisiert"
+msgstr "Ultimo aggiornamento"
+
+#: blogs-directory.php:159
+#, fuzzy
+msgid "Auflistung pro Seite"
+msgstr "Elenco per pagina"
+
+#: blogs-directory.php:176
+#, fuzzy
+msgid "Webseiten ausblenden"
+msgstr "Nascondere le pagine web"
+
+#: blogs-directory.php:179
+#, fuzzy
+msgid "Bloghosting Plugin"
+msgstr "Plugin di hosting per blog"
+
+#: blogs-directory.php:180
+#, fuzzy
+msgid "(Unbezahlte Blogs ausblenden.)"
+msgstr "(Nascondi i blog non pagati)"
+
+#: blogs-directory.php:182
+msgid "Privat"
+msgstr "Privato"
+
+#: blogs-directory.php:183
+#, fuzzy
+msgid "(Blende Blogs aus, die Suchmaschinen blockieren.)"
+msgstr "(Nascondere i blog che bloccano i motori di ricerca)"
+
+#: blogs-directory.php:187
+#, fuzzy
+msgid "Titel der Verzeichnis Seite"
+msgstr "Titolo della pagina della directory"
+
+#: blogs-directory.php:190 blogs-directory.php:203 blogs-directory.php:208
+#: blogs-directory.php:213
+msgid "Standard"
+msgstr "Standard"
+
+#: blogs-directory.php:194
+#, fuzzy
+msgid "Beschreibung anzeigen"
+msgstr "Mostra descrizione"
+
+#: blogs-directory.php:197
+#, fuzzy
+msgid "Zeige die Beschreibung für jede Seite auf der Verzeichnis-Seite an"
+msgstr "Mostrare la descrizione per ogni pagina nella pagina della directory"
+
+#: blogs-directory.php:201
+msgid "Hintergrundfarbe"
+msgstr "Colore di sfondo"
+
+#: blogs-directory.php:206
+#, fuzzy
+msgid "Alternative Hintergrundfarbe"
+msgstr "Colore di sfondo alternativo"
+
+#: blogs-directory.php:211
+msgid "Rahmenfarbe"
+msgstr "Colore del telaio"
+
+#: blogs-directory.php:217
+msgid "Änderungen speichern"
+msgstr "Save changes"
+
+#: blogs-directory.php:349 blogs-directory.php:351
+msgid "Suchen"
+msgstr "Cerca"
+
+#: blogs-directory.php:614
+#, fuzzy
+msgid "Keine Ergebnisse..."
+msgstr "Nessun risultato..."
+
+#: blogs-directory.php:624
+#, fuzzy
+msgid "Ungültige Seite."
+msgstr "Pagina non valida."
+
+#: blogs-directory.php:644
+msgid "Suche"
+msgstr "cerca"
+
+#: blogs-directory.php:681 blogs-directory.php:742
+msgid "Zurück"
+msgstr "Indietro"
+
+#: blogs-directory.php:697 blogs-directory.php:757
+msgid "Weiter"
+msgstr "Continua"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:56
+#, fuzzy
+msgid "View details"
+msgstr "Visualizza i dettagli"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:79
+#, fuzzy, php-format
+msgid "Weitere Informationen zu %s"
+msgstr "Ulteriori informazioni su %s"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:130
+#, fuzzy
+msgid "Auf neuere Version prüfen"
+msgstr "Verificare la presenza di una versione più recente"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:217
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid "Keine neuere Version von %s im PSOURCE REPO gefunden."
+msgstr "Non è stata trovata una versione più recente di %s in PSOURCE REPO."
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:219
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid "Im PSOURCE REPO ist eine <b>neuere Version von %s</b> verfügbar!."
+msgstr ""
+"Una <b>versione più recente di %s</b> è disponibile nel PSOURCE REPO!"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:221
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid ""
+"Entschuldige, es konnte nicht festgestellt werden, ob Updates für %s "
+"verfügbar sind."
+msgstr ""
+"Spiacente, non è stato possibile determinare se sono disponibili "
+"aggiornamenti per %s."
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:227
+#, fuzzy, php-format
+msgid "Unbekannter PSOURCE-UPDATTER-Status \"%s\""
+msgstr "Stato PSOURCE-UPDATTER sconosciuto \"%s\""
+
+#: psource/psource-plugin-update/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+#, fuzzy
+msgid "There is no changelog available."
+msgstr "Non è disponibile un changelog."
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Blogs-Verzeichnis"
+msgstr "Elenco dei blog"
+
+#. Plugin URI of the plugin/theme
+#, fuzzy
+msgid ""
+"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+msgstr ""
+"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar "
+"inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller "
+"Blogs auf Deiner ClassicPress Multisite."
+msgstr ""
+"Questo plugin fornisce una directory paginata, completamente ricercabile, "
+"con avatar incluso, automatica e di bell'aspetto di tutti i blog sul "
+"vostro multisito ClassicPress."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "WMS N@W"
+msgstr "WMS N@W"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://n3rds.work"
+msgstr "https://n3rds.work"

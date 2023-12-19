@@ -1,16 +1,17 @@
 <?php
 /*
-Plugin Name: Blogs-Verzeichnis
+Plugin Name: MS-Blogs-Verzeichnis
 Plugin URI: https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/
-Description: Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller Blogs auf Deiner WordPress Multisite- oder BuddyPress-Installation.
+Description: Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller Blogs auf Deiner ClassicPress Multisite.
 Author: WMS N@W
 Author URI: https://n3rds.work
-Version: 1.2.1
+Version: 1.2.2
+Text Domain: blogs-directory
 Network: true
 */
 
 /*
-Copyright 2019 WMS N@W (https://n3rds.work)
+Copyright 2019-2024 WMS N@W (https://n3rds.work)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
@@ -30,8 +31,9 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //---Config---------------------------------------------------------------//
 //------------------------------------------------------------------------//
 
-require 'dash-notice/plugin-update-checker/plugin-update-checker.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+require 'psource/psource-plugin-update/psource-plugin-updater.php';
+use Psource\PluginUpdateChecker\v5\PucFactory;
+$MyUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=blogs-directory', 
 	__FILE__, 
 	'blogs-directory' 
@@ -66,7 +68,7 @@ add_action('admin_init', 'blogs_directory_save_options');
 
 //Network admin menu
 function blogs_directory_admin_page() {
-        add_submenu_page( 'settings.php',  __( 'Seiten-Verzeichnis', 'blogs-directory' ), __( 'Seiten-Verzeichnis', 'blogs-directory' ), 'manage_network_options', 'blog-directory-settings', 'blogs_directory_site_admin_options' );
+        add_submenu_page( 'settings.php',  __( 'Webseiten-Verzeichnis', 'blogs-directory' ), __( 'Webseiten-Verzeichnis', 'blogs-directory' ), 'manage_network_options', 'blog-directory-settings', 'blogs_directory_site_admin_options' );
         // $page = add_submenu_page( 'blog-directory', __( 'Settings', 'blogs-directory' ), __( 'Settings', 'blogs-directory' ), 'manage_network_options', 'blog-directory-settings', 'blogs_directory_site_admin_options' );
 }
 
@@ -139,49 +141,48 @@ function blogs_directory_site_admin_options() {
         ?><div id="message" class="updated fade"><p><?php echo $msg; ?></p></div><?php
     }
     ?>
-        <h2><?php _e('Seiten-Verzeichnis Einstellungen','blogs-directory') ?></h2>
-        <form method="post" name="" >
-		    <?php wp_nonce_field('save-site-directory', '_wp_nonce', $_SERVER['PHP_SELF']); ?>
-		    <table class="form-table">
-                <tr valign="top">
-                    <th width="33%" scope="row"><?php _e('Sort By','blogs-directory') ?></th>
-                    <td>
-                        <select name="blogs_directory_sort_by" id="blogs_directory_sort_by">
-                           <option value="alphabetically" <?php if ( $blogs_directory_sort_by == 'alphabetically' ) { echo 'selected="selected"'; } ?> ><?php _e('Seitenname (A-Z)','blogs-directory'); ?></option>
-                           <option value="latest" <?php if ( $blogs_directory_sort_by == 'latest' ) { echo 'selected="selected"'; } ?> ><?php _e('Neueste','blogs-directory'); ?></option>
-                           <option value="last_updated" <?php if ( $blogs_directory_sort_by == 'last_updated' ) { echo 'selected="selected"'; } ?> ><?php _e('Zuletzt aktualisiert','blogs-directory'); ?></option>
-                        </select>
-                    <br /></td>
-                </tr>
-                <tr valign="top">
-                    <th width="33%" scope="row"><?php _e('Auflistung pro Seite','blogs-directory') ?></th>
-                    <td>
-                    <select name="blogs_directory_per_page" id="blogs_directory_per_page">
-                       <option value="5" <?php if ( $blogs_directory_per_page == '5' ) { echo 'selected="selected"'; } ?> ><?php echo '5'; ?></option>
-                       <option value="10" <?php if ( $blogs_directory_per_page == '10' ) { echo 'selected="selected"'; } ?> ><?php echo '10'; ?></option>
-                       <option value="15" <?php if ( $blogs_directory_per_page == '15' ) { echo 'selected="selected"'; } ?> ><?php echo '15'; ?></option>
-                       <option value="20" <?php if ( $blogs_directory_per_page == '20' ) { echo 'selected="selected"'; } ?> ><?php echo '20'; ?></option>
-                       <option value="25" <?php if ( $blogs_directory_per_page == '25' ) { echo 'selected="selected"'; } ?> ><?php echo '25'; ?></option>
-                       <option value="30" <?php if ( $blogs_directory_per_page == '30' ) { echo 'selected="selected"'; } ?> ><?php echo '30'; ?></option>
-                       <option value="35" <?php if ( $blogs_directory_per_page == '35' ) { echo 'selected="selected"'; } ?> ><?php echo '35'; ?></option>
-                       <option value="40" <?php if ( $blogs_directory_per_page == '40' ) { echo 'selected="selected"'; } ?> ><?php echo '40'; ?></option>
-                       <option value="45" <?php if ( $blogs_directory_per_page == '45' ) { echo 'selected="selected"'; } ?> ><?php echo '45'; ?></option>
-                       <option value="50" <?php if ( $blogs_directory_per_page == '50' ) { echo 'selected="selected"'; } ?> ><?php echo '50'; ?></option>
-                    </select>
-                    <br /></td>
-                </tr>
-                <tr valign="top">
-                    <th width="33%" scope="row"><?php _e('Webseiten ausblenden','blogs-directory') ?></th>
-                    <td>
-                        <input name="blogs_directory_hide_blogs[pro_site]" id="blogs_directory_hide_blogs[pro_site]" type="checkbox" value="1" <?php echo ( isset( $blogs_directory_hide_blogs['pro_site'] ) && '1' == $blogs_directory_hide_blogs['pro_site'] ) ? 'checked' : '' ; ?>  />
-                        <label for="blogs_directory_hide_blogs[pro_site]"><?php _e('Bloghosting Plugin','blogs-directory') ?></label><br />
-                        <span class="description"><?php _e('(Unbezahlte Blogs ausblenden.)','blogs-directory') ?></span><br />
-
-                        <input name="blogs_directory_hide_blogs[private]" id="blogs_directory_hide_blogs[private]" type="checkbox" value="1" <?php echo ( isset( $blogs_directory_hide_blogs['private'] ) && '1' == $blogs_directory_hide_blogs['private'] ) ? 'checked' : '' ; ?>  />
-                        <label for="blogs_directory_hide_blogs[private]"><?php _e('Privat','blogs-directory') ?></label><br />
-                        <span class="description"><?php _e('(Blende Blogs aus, die Suchmaschinen blockieren.)','blogs-directory') ?></span><br />
-                    </td>
-                </tr>
+    <h2><?php _e('Seiten-Verzeichnis Einstellungen','blogs-directory') ?></h2>
+    <form method="post" name="" >
+		<?php wp_nonce_field('save-site-directory', '_wp_nonce', $_SERVER['PHP_SELF']); ?>
+		<table class="form-table">
+            <tr valign="top">
+            <th width="33%" scope="row"><?php _e('Sort By','blogs-directory') ?></th>
+            <td>
+            <select name="blogs_directory_sort_by" id="blogs_directory_sort_by">
+            	<option value="alphabetically" <?php if ( $blogs_directory_sort_by == 'alphabetically' ) { echo 'selected="selected"'; } ?> ><?php _e('Seitenname (A-Z)','blogs-directory'); ?></option>
+            	<option value="latest" <?php if ( $blogs_directory_sort_by == 'latest' ) { echo 'selected="selected"'; } ?> ><?php _e('Neueste','blogs-directory'); ?></option>
+            	<option value="last_updated" <?php if ( $blogs_directory_sort_by == 'last_updated' ) { echo 'selected="selected"'; } ?> ><?php _e('Zuletzt aktualisiert','blogs-directory'); ?></option>
+            </select>
+            <br /></td>
+            </tr>
+            <tr valign="top">
+            <th width="33%" scope="row"><?php _e('Auflistung pro Seite','blogs-directory') ?></th>
+            <td>
+            <select name="blogs_directory_per_page" id="blogs_directory_per_page">
+                <option value="5" <?php if ( $blogs_directory_per_page == '5' ) { echo 'selected="selected"'; } ?> ><?php echo '5'; ?></option>
+                <option value="10" <?php if ( $blogs_directory_per_page == '10' ) { echo 'selected="selected"'; } ?> ><?php echo '10'; ?></option>
+                <option value="15" <?php if ( $blogs_directory_per_page == '15' ) { echo 'selected="selected"'; } ?> ><?php echo '15'; ?></option>
+                <option value="20" <?php if ( $blogs_directory_per_page == '20' ) { echo 'selected="selected"'; } ?> ><?php echo '20'; ?></option>
+                <option value="25" <?php if ( $blogs_directory_per_page == '25' ) { echo 'selected="selected"'; } ?> ><?php echo '25'; ?></option>
+                <option value="30" <?php if ( $blogs_directory_per_page == '30' ) { echo 'selected="selected"'; } ?> ><?php echo '30'; ?></option>
+                <option value="35" <?php if ( $blogs_directory_per_page == '35' ) { echo 'selected="selected"'; } ?> ><?php echo '35'; ?></option>
+                <option value="40" <?php if ( $blogs_directory_per_page == '40' ) { echo 'selected="selected"'; } ?> ><?php echo '40'; ?></option>
+                <option value="45" <?php if ( $blogs_directory_per_page == '45' ) { echo 'selected="selected"'; } ?> ><?php echo '45'; ?></option>
+                <option value="50" <?php if ( $blogs_directory_per_page == '50' ) { echo 'selected="selected"'; } ?> ><?php echo '50'; ?></option>
+            </select>
+            <br /></td>
+            </tr>
+            <tr valign="top">
+            <th width="33%" scope="row"><?php _e('Webseiten ausblenden','blogs-directory') ?></th>
+            <td>
+            <input name="blogs_directory_hide_blogs[pro_site]" id="blogs_directory_hide_blogs[pro_site]" type="checkbox" value="1" <?php echo ( isset( $blogs_directory_hide_blogs['pro_site'] ) && '1' == $blogs_directory_hide_blogs['pro_site'] ) ? 'checked' : '' ; ?>  />
+            <label for="blogs_directory_hide_blogs[pro_site]"><?php _e('Bloghosting Plugin','blogs-directory') ?></label><br />
+            <span class="description"><?php _e('(Unbezahlte Blogs ausblenden.)','blogs-directory') ?></span><br />
+			<input name="blogs_directory_hide_blogs[private]" id="blogs_directory_hide_blogs[private]" type="checkbox" value="1" <?php echo ( isset( $blogs_directory_hide_blogs['private'] ) && '1' == $blogs_directory_hide_blogs['private'] ) ? 'checked' : '' ; ?>  />
+            <label for="blogs_directory_hide_blogs[private]"><?php _e('Privat','blogs-directory') ?></label><br />
+            <span class="description"><?php _e('(Blende Blogs aus, die Suchmaschinen blockieren.)','blogs-directory') ?></span><br />
+            </td>
+            </tr>
                 <tr valign="top">
                     <th width="33%" scope="row"><?php _e('Titel der Verzeichnis Seite','blogs-directory') ?></th>
                     <td>
@@ -518,7 +519,7 @@ function blogs_directory_output($content) {
 			if (count($found_words) == 0)
 				continue;
 
-                        $found_word_name = 0;
+                $found_word_name = 0;
 			$found_word_description = 0;
 
 			foreach ($found_words as $found_word) {
@@ -529,29 +530,29 @@ function blogs_directory_output($content) {
 				}
 			}
 
-                        $blogname           = get_blog_option( $blog['blog_id'], 'blogname', $blog['domain'] . $blog['path'] );
-                        $blogdescription    = get_blog_option( $blog['blog_id'], 'blogdescription', $blog['domain'] . $blog['path'] );
-                        $percent            = $found_word_name + $found_word_description;
+            $blogname           = get_blog_option( $blog['blog_id'], 'blogname', $blog['domain'] . $blog['path'] );
+            $blogdescription    = get_blog_option( $blog['blog_id'], 'blogdescription', $blog['domain'] . $blog['path'] );
+            $percent            = $found_word_name + $found_word_description;
 
-                        if ( 0 < $percent ) {
-                            $blog['blogname']           = $blogname;
-                            $blog['blogdescription']    = $blogdescription;
-                            $blog['percent']            = $percent;
-                            $blogs[]                    = $blog;
-                        }
-		    }
-                }
-
-                //sort blogs by percent
-                if ( 1 < count( $blogs ) ) {
-                    $fn = create_function( '$a, $b', '
-                        if( $a["percent"] == $b["percent"] ) return 0;
-                        return ( $a["percent"] > $b["percent"] ) ? -1 : 1;
-                    ');
-
-                    usort( $blogs, $fn );
-                }
+            if ( 0 < $percent ) {
+                $blog['blogname']           = $blogname;
+                $blog['blogdescription']    = $blogdescription;
+                $blog['percent']            = $percent;
+                $blogs[]                    = $blog;
             }
+		}
+    }
+
+    //sort blogs by percent
+    if ( 1 < count( $blogs ) ) {
+        $fn = create_function( '$a, $b', '
+        if( $a["percent"] == $b["percent"] ) return 0;
+        return ( $a["percent"] > $b["percent"] ) ? -1 : 1;
+        ');
+
+        usort( $blogs, $fn );
+    }
+}
 
 			//=====================================//
 			$search_form_content = blogs_directory_search_form_output('', $blogs_directory['phrase']);
@@ -775,13 +776,3 @@ function blogs_directory_landing_navigation_output($content, $per_page, $page){
 function blogs_directory_roundup($value, $dp){
     return ceil($value*pow(10, $dp))/pow(10, $dp);
 }
-
-/* Update Notifications Notice */
-/*if ( !function_exists( 'wdp_un_check' ) ):
-function wdp_un_check() {
-    if ( !class_exists('WPMUDEV_Update_Notifications') && current_user_can('edit_users') )
-        echo '<div class="error fade"><p>' . __('Please install the latest version of <a href="http://premium.wpmudev.org/project/update-notifications/" title="Download Now &raquo;">our free Update Notifications plugin</a> which helps you stay up-to-date with the most stable, secure versions of WPMU DEV themes and plugins. <a href="http://premium.wpmudev.org/wpmu-dev/update-notifications-plugin-information/">More information &raquo;</a>', 'wpmudev') . '</a></p></div>';
-}
-add_action( 'admin_notices', 'wdp_un_check', 5 );
-add_action( 'network_admin_notices', 'wdp_un_check', 5 );
-endif;*/

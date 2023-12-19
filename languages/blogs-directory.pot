@@ -1,0 +1,207 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogs-Verzeichnis\n"
+"POT-Creation-Date: 2023-12-19 18:13+0100\n"
+"PO-Revision-Date: 2023-12-19 18:13+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: blogs-directory.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: psource/psource-plugin-update/vendor\n"
+
+#: blogs-directory.php:71
+msgid "Webseiten-Verzeichnis"
+msgstr ""
+
+#: blogs-directory.php:113
+msgid "Sites"
+msgstr ""
+
+#: blogs-directory.php:136
+msgid "Einstellungen gespeichert."
+msgstr ""
+
+#: blogs-directory.php:139
+#, php-format
+msgid "Fehler: %s"
+msgstr ""
+
+#: blogs-directory.php:144
+msgid "Seiten-Verzeichnis Einstellungen"
+msgstr ""
+
+#: blogs-directory.php:149
+msgid "Sort By"
+msgstr ""
+
+#: blogs-directory.php:152
+msgid "Seitenname (A-Z)"
+msgstr ""
+
+#: blogs-directory.php:153
+msgid "Neueste"
+msgstr ""
+
+#: blogs-directory.php:154
+msgid "Zuletzt aktualisiert"
+msgstr ""
+
+#: blogs-directory.php:159
+msgid "Auflistung pro Seite"
+msgstr ""
+
+#: blogs-directory.php:176
+msgid "Webseiten ausblenden"
+msgstr ""
+
+#: blogs-directory.php:179
+msgid "Bloghosting Plugin"
+msgstr ""
+
+#: blogs-directory.php:180
+msgid "(Unbezahlte Blogs ausblenden.)"
+msgstr ""
+
+#: blogs-directory.php:182
+msgid "Privat"
+msgstr ""
+
+#: blogs-directory.php:183
+msgid "(Blende Blogs aus, die Suchmaschinen blockieren.)"
+msgstr ""
+
+#: blogs-directory.php:187
+msgid "Titel der Verzeichnis Seite"
+msgstr ""
+
+#: blogs-directory.php:190 blogs-directory.php:203 blogs-directory.php:208
+#: blogs-directory.php:213
+msgid "Standard"
+msgstr ""
+
+#: blogs-directory.php:194
+msgid "Beschreibung anzeigen"
+msgstr ""
+
+#: blogs-directory.php:197
+msgid "Zeige die Beschreibung für jede Seite auf der Verzeichnis-Seite an"
+msgstr ""
+
+#: blogs-directory.php:201
+msgid "Hintergrundfarbe"
+msgstr ""
+
+#: blogs-directory.php:206
+msgid "Alternative Hintergrundfarbe"
+msgstr ""
+
+#: blogs-directory.php:211
+msgid "Rahmenfarbe"
+msgstr ""
+
+#: blogs-directory.php:217
+msgid "Änderungen speichern"
+msgstr ""
+
+#: blogs-directory.php:349 blogs-directory.php:351
+msgid "Suchen"
+msgstr ""
+
+#: blogs-directory.php:614
+msgid "Keine Ergebnisse..."
+msgstr ""
+
+#: blogs-directory.php:624
+msgid "Ungültige Seite."
+msgstr ""
+
+#: blogs-directory.php:644
+msgid "Suche"
+msgstr ""
+
+#: blogs-directory.php:681 blogs-directory.php:742
+msgid "Zurück"
+msgstr ""
+
+#: blogs-directory.php:697 blogs-directory.php:757
+msgid "Weiter"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:56
+msgid "View details"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:79
+#, php-format
+msgid "Weitere Informationen zu %s"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:130
+msgid "Auf neuere Version prüfen"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "Keine neuere Version von %s im PSOURCE REPO gefunden."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "Im PSOURCE REPO ist eine <b>neuere Version von %s</b> verfügbar!."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid ""
+"Entschuldige, es konnte nicht festgestellt werden, ob Updates für %s "
+"verfügbar sind."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:227
+#, php-format
+msgid "Unbekannter PSOURCE-UPDATTER-Status \"%s\""
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Blogs-Verzeichnis"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar "
+"inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller "
+"Blogs auf Deiner ClassicPress Multisite."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WMS N@W"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://n3rds.work"
+msgstr ""

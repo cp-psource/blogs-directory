@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogs-Verzeichnis\n"
+"POT-Creation-Date: 2023-12-19 18:14+0100\n"
+"PO-Revision-Date: 2023-12-19 18:15+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: blogs-directory.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: psource/psource-plugin-update/vendor\n"
+
+#: blogs-directory.php:71
+#, fuzzy
+msgid "Webseiten-Verzeichnis"
+msgstr "Website directory"
+
+#: blogs-directory.php:113
+#, fuzzy
+msgid "Sites"
+msgstr "Sites"
+
+#: blogs-directory.php:136
+msgid "Einstellungen gespeichert."
+msgstr "Settings saved."
+
+#: blogs-directory.php:139
+#, fuzzy, php-format
+msgid "Fehler: %s"
+msgstr "Error: %s"
+
+#: blogs-directory.php:144
+#, fuzzy
+msgid "Seiten-Verzeichnis Einstellungen"
+msgstr "Page directory settings"
+
+#: blogs-directory.php:149
+#, fuzzy
+msgid "Sort By"
+msgstr "Sort By"
+
+#: blogs-directory.php:152
+#, fuzzy
+msgid "Seitenname (A-Z)"
+msgstr "Page name (A-Z)"
+
+#: blogs-directory.php:153
+msgid "Neueste"
+msgstr "Newest"
+
+#: blogs-directory.php:154
+#, fuzzy
+msgid "Zuletzt aktualisiert"
+msgstr "Last updated"
+
+#: blogs-directory.php:159
+#, fuzzy
+msgid "Auflistung pro Seite"
+msgstr "Listing per page"
+
+#: blogs-directory.php:176
+#, fuzzy
+msgid "Webseiten ausblenden"
+msgstr "Hide web pages"
+
+#: blogs-directory.php:179
+#, fuzzy
+msgid "Bloghosting Plugin"
+msgstr "Blog hosting plugin"
+
+#: blogs-directory.php:180
+#, fuzzy
+msgid "(Unbezahlte Blogs ausblenden.)"
+msgstr "(Hide unpaid blogs.)"
+
+#: blogs-directory.php:182
+msgid "Privat"
+msgstr "Private"
+
+#: blogs-directory.php:183
+#, fuzzy
+msgid "(Blende Blogs aus, die Suchmaschinen blockieren.)"
+msgstr "(Hide blogs that block search engines)"
+
+#: blogs-directory.php:187
+#, fuzzy
+msgid "Titel der Verzeichnis Seite"
+msgstr "Title of the directory page"
+
+#: blogs-directory.php:190 blogs-directory.php:203 blogs-directory.php:208
+#: blogs-directory.php:213
+msgid "Standard"
+msgstr "Default"
+
+#: blogs-directory.php:194
+#, fuzzy
+msgid "Beschreibung anzeigen"
+msgstr "Show description"
+
+#: blogs-directory.php:197
+#, fuzzy
+msgid "Zeige die Beschreibung für jede Seite auf der Verzeichnis-Seite an"
+msgstr "Show the description for each page on the directory page"
+
+#: blogs-directory.php:201
+msgid "Hintergrundfarbe"
+msgstr "Background"
+
+#: blogs-directory.php:206
+#, fuzzy
+msgid "Alternative Hintergrundfarbe"
+msgstr "Alternative background color"
+
+#: blogs-directory.php:211
+#, fuzzy
+msgid "Rahmenfarbe"
+msgstr "Frame color"
+
+#: blogs-directory.php:217
+msgid "Änderungen speichern"
+msgstr "Save changes"
+
+#: blogs-directory.php:349 blogs-directory.php:351
+msgid "Suchen"
+msgstr "Search"
+
+#: blogs-directory.php:614
+#, fuzzy
+msgid "Keine Ergebnisse..."
+msgstr "No results..."
+
+#: blogs-directory.php:624
+#, fuzzy
+msgid "Ungültige Seite."
+msgstr "Invalid page."
+
+#: blogs-directory.php:644
+msgid "Suche"
+msgstr "Search"
+
+#: blogs-directory.php:681 blogs-directory.php:742
+msgid "Zurück"
+msgstr "Back"
+
+#: blogs-directory.php:697 blogs-directory.php:757
+msgid "Weiter"
+msgstr "Next"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:56
+#, fuzzy
+msgid "View details"
+msgstr "View details"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:79
+#, fuzzy, php-format
+msgid "Weitere Informationen zu %s"
+msgstr "Further information on %s"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:130
+#, fuzzy
+msgid "Auf neuere Version prüfen"
+msgstr "Check for newer version"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:217
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid "Keine neuere Version von %s im PSOURCE REPO gefunden."
+msgstr "No newer version of %s found in PSOURCE REPO."
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:219
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid "Im PSOURCE REPO ist eine <b>neuere Version von %s</b> verfügbar!."
+msgstr "A <b>newer version of %s</b> is available in the PSOURCE REPO!"
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:221
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid ""
+"Entschuldige, es konnte nicht festgestellt werden, ob Updates für %s "
+"verfügbar sind."
+msgstr ""
+"Sorry, it could not be determined whether updates are available for %s."
+
+#: psource/psource-plugin-update/Puc/v5p0/Plugin/Ui.php:227
+#, fuzzy, php-format
+msgid "Unbekannter PSOURCE-UPDATTER-Status \"%s\""
+msgstr "Unknown PSOURCE-UPDATTER status \"%s\""
+
+#: psource/psource-plugin-update/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+#, fuzzy
+msgid "There is no changelog available."
+msgstr "There is no changelog available."
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Blogs-Verzeichnis"
+msgstr "Blogs directory"
+
+#. Plugin URI of the plugin/theme
+#, fuzzy
+msgid ""
+"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+msgstr ""
+"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar "
+"inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller "
+"Blogs auf Deiner ClassicPress Multisite."
+msgstr ""
+"This plugin provides a paginated, fully searchable, avatar included, "
+"automatic and pretty good looking directory of all blogs on your "
+"ClassicPress Multisite."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "WMS N@W"
+msgstr "WMS N@W"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://n3rds.work"
+msgstr "https://n3rds.work"
