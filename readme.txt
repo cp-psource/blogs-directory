@@ -4,7 +4,7 @@ Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free
 Tags: multisite, blogs, verzeichnis, classicpress, wordpress, psource
 Requires at least: 3.8
 Tested up to: 5.6
-Stable tag: 1.2.2
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,32 +13,27 @@ Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar inklus
 
 == Description ==
 
-Erstelle und monetarisiere Dein eigenes Netzwerk vom Typ WordPress.com mit Premium-Diensten und kostenpflichtigen Upgrades mithilfe von PS Bloghosting.
-PS Bloghosting kann ein Netzwerk mit Millionen von Blogs versorgen – und tut das auch. Wir haben PS Bloghosting entwickelt, um die Möglichkeit zu geben ein eigenes WordPress.com zu erstellen und zu verwalten, eines der größten und profitabelsten Netzwerke der Welt. 
-Das Seiten-Management erleichtert die Arbeit und ermöglicht es Dir, Dein Geschäft auszubauen.
+Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller Blogs auf Deiner ClassicPress Multisite.
 
-= Biete Premium-Upgrades an =
+= MS-Blogs-Verzeichnis erstellt eine einfache und anpassbare Liste aller Webseiten in Deinem Netzwerk. =
 
-Stelle Benutzern den Zugriff auf Deine Premium-Hosting-Services in Rechnung. Ermögliche Benutzern in Deinem Netzwerk ein Basiskonto, lade sie aber auch zu einem Upgrade für werbefreies Bloggen, einem 24/7 Experten-Support und erstklassigen Produkten ein.
+Dieses benutzerfreundliche Plugin automatisiert die Verwaltung von Webseiten-Listen vollständig, sodass Du sie schnell einrichten kannst. Jede hinzugefügte Webseite, jede Slogan-Änderung und jedes gelöschte Blog wird sofort aktualisiert, sodass ein stets aktuelles Verzeichnis vorhanden ist.
 
-= Gebühr für Deine Dienste =
+= Passt sich dem Stil Deines Themes an =
 
-PS Bloghosting enthält alle „Extras“, die Du zum Erstellen eines funktionsreichen Hosting-Service benötigst. Biete Themen-Upgrades, Plugin-Upgrades, Experten-Support, werbefreies Bloggen, unbegrenztes Veröffentlichen, Domain-Mapping, erhöhten Speicherplatz und BuddyPress-Support.
+Standardmäßig übernimmt MS-Blogs-Verzeichnis Stilelemente aus Deinem Design, um sie perfekt in jedes Theme zu integrieren. Oder füge mit dem integrierten Farbanpassungstool einen Farbtupfer hinzu, um dem Ganzen noch mehr Glanz zu verleihen. Mit der integrierten Verzeichnissuche können Benutzer Blogs in Deinem Netzwerk schnell finden und darin navigieren. Jede Einstellung, von der Anzeigereihenfolge bis zur Auflistung pro Seite, kann mit einem Klick angepasst werden.
 
-= Pauschalangebote verkaufen =
+= Verwendung =
 
-Erstelle abgestufte Mitgliedschaftsstufen mit Produkten und Dienstleistungen, die eine Vielzahl von Benutzern ansprechen. Füge so viele Ebenen hinzu, wie Du möchtest, und bündel die besten Dienste Deines Netzwerks.
+Es sollte automatisch eine Seite mit dem Namen „Sites“ auf Deiner Hauptseite erstellen, auf der jeder nach einer Website suchen kannst. Für den Fall, dass die Seite nicht automatisch erstellt wird, musst Du lediglich eine Seite mit dem Slug „Blogs“ ohne Anführungszeichen erstellen.
 
-Es enthält alle Extras, die Du zum Aufbau eines funktionsreichen Hosting-Service benötigst.
+= Anpassung =
 
-= Eingebaute Preistabelle =
-
-Generiere automatisch Preise und Feature-Tabellen und lege schnell alles zusammen, style und markiere alles, was Deine Webseite zu bieten hat. Gib kostenlosen Benutzern nur Zugriff auf Deine grundlegenden Inhalte und berechne den höchsten Preis für benutzerdefinierte Domains und den Zugriff auf E-Commerce.
+Du kannst den von Blogs Directory verwendeten Seiten-Slug ändern, indem Du blogs-directory.php öffnest und den Slug in Zeile 45 bearbeitest, der standardmäßig wie folgt lautet: define('BLOGS_DIRECTORY_SLUG', 'your-slug');
 
 [POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
-[Projektseite](https://n3rds.work/piestingtal_source/ps-bloghosting-multisite-next-level-plugin/)
-[GitHub](https://github.com/piestingtal-source/ps-bloghosting)
+[GitHub](https://github.com/cp-psource/blogs-directory)
 
 == Mehr PSOURCE ==
 
@@ -87,3 +82,7 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
 
 == ChangeLog ==
+
+= 1.0.0 =
+
+*PSOURCE RELEASE

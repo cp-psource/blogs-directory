@@ -10,43 +10,43 @@ Dieses benutzerfreundliche Plugin automatisiert die Verwaltung von Webseiten-Lis
 
 Standardmäßig übernimmt MS-Blogs-Verzeichnis Stilelemente aus Deinem Design, um sie perfekt in jedes Theme zu integrieren. Oder füge mit dem integrierten Farbanpassungstool einen Farbtupfer hinzu, um dem Ganzen noch mehr Glanz zu verleihen. Mit der integrierten Verzeichnissuche können Benutzer Blogs in Deinem Netzwerk schnell finden und darin navigieren. Jede Einstellung, von der Anzeigereihenfolge bis zur Auflistung pro Seite, kann mit einem Klick angepasst werden.
 
-![Das Blog-Verzeichnis passt sich Deinem Theme an](http://premium.wpmudev.org/wp-content/uploads/2009/09/sites-list.jpg)
+![Das Blogs-Verzeichnis passt sich Deinem Theme an](https://n3rds.work/wp-content/uploads/2023/12/sites-list.jpg)
 
 
- Das Blog-Verzeichnis passt sich Deinem Theme an
+ Das Blogs-Verzeichnis passt sich Deinem Theme an
 
 ### Mache mehr mit PSOURCE
 
-Pair Blog Directory with other premium plugins and get more. Activate [Pro Sites](https://n3rds.work/piestingtal_source/ps-bloghosting-multisite-next-level-plugin/) and limit your site list to only paid blogs or install [Avatars](http://premium.wpmudev.org/project/avatars/) and display a blog avatar for each site in your directory. 
+Kombiniere Blogs-Verzeichnis mit anderen Premium-Plugins und erhalten Sie mehr. Aktiviere [Bloghosting](https://n3rds.work/piestingtal_source/ps-bloghosting-multisite-next-level-plugin/) und beschränke Deine Webseiten-Liste nur auf kostenpflichtige Blogs oder installiere [Avatare](http://n3rds. work/piestingtal_source/avatars/) und zeige einen Blog-Avatar für jede Webseite in Deinem Verzeichnis an.
 
-![Seamless Pro Sites integration](http://premium.wpmudev.org/wp-content/uploads/2009/09/pro-sites-integration.jpg)
+![Nahtlose Pro Sites-Integration](https://n3rds.work/wp-content/uploads/2023/12/pro-sites-integration.jpg)
 
 
- Seamless Pro Sites integration
+ Nahtlose Bloghosting-Integration
 
- Save time with Blog Directory – instant setup and a streamlined site list you don't have to micromanage.
+ Spare Zeit mit dem Blogs-Verzeichnis – sofortige Einrichtung und eine optimierte Webseiten-Liste, die Du nicht bis ins kleinste Detail verwalten musst.
 
-## Usage
+## Verwendung
 
-It should auto create a page called "Sites" on your main site where anyone can search to locate a site. On the off chance the page isn't auto created all you need to do is create a page with the slug "blogs" without the quotes. 
+Es sollte automatisch eine Seite mit dem Namen „Sites“ auf Deiner Hauptseite erstellen, auf der jeder nach einer Website suchen kannst. Für den Fall, dass die Seite nicht automatisch erstellt wird, musst Du lediglich eine Seite mit dem Slug „Blogs“ ohne Anführungszeichen erstellen.
 
-![blogs-directory-sites-page](https://premium.wpmudev.org/wp-content/uploads/2009/09/blogs-directory-sites-page.png)
+![blogs-directory-sites-page](https://n3rds.work/wp-content/uploads/2023/12/blogs-directory-sites-page.png)
 
- **Changing how sites are displayed in your Site Directory is as simple as pie.** You will see the following screen under **Network Admin** > **Settings** > **Site Directory** 
+ **Das Ändern der Anzeige von Webseiten in Deinem Blogs-Verzeichnis ist kinderleicht.** Du siehst den folgenden Bildschirm unter **Netzwerkadministration** > **Einstellungen** > **Blogs-Verzeichnis**
 
-![1\. Select your preferred sort option. 2\. Select the number of sites you want to display per page. 3\. Select whether to hide unpaid sites if you are using the Pro Sites Plugin, and if you want to hide sites that have been set to Private. 4\. Select the Title you want for your Directory page. 5\. Chose to toggle on or off site descriptions. 6\. Adjust the background and border colors.](https://premium.wpmudev.org/wp-content/uploads/2009/09/blogs-directory-settings.png)
+![1\. Wähle Deine bevorzugte Sortieroption. 2\. Wähle die Anzahl der Webseiten aus, die Du pro Seite anzeigen möchtest. 3\. Wähle aus, ob unbezahlte Webseiten ausgeblendet werden sollen, wenn Du das Bloghosting-Plugin verwendest und ob Du Webseiten ausblenden möchtest, die auf Privat eingestellt sind. 4\. Wähle den gewünschten Titel für Deine Verzeichnisseite aus. 5\. Wähle aus, ob Du Webseiten-Beschreibungen ein- oder ausblenden möchtest. 6\. Passe die Hintergrund- und Rahmenfarben an.](https://n3rds.work/wp-content/uploads/2023/12/blogs-directory-settings.png)
 
- 1\. Select your preferred sort option.  
-2\. Select the number of sites you want to display per page.  
-3\. Select whether to hide unpaid sites if you are using the Pro Sites Plugin, and if you want to hide sites that have set to Private.  
-4\. Select the Title you want for your Directory page.  
-5\. Choose to toggle on or off site descriptions.  
-6\. Adjust the background and border colors.
+ 1\. Wähle Deine bevorzugte Sortieroption.  
+ 2\. Wähle die Anzahl der Webseiten aus, die Du pro Seite anzeigen möchtest.  
+ 3\. Wähle aus, ob unbezahlte Webseiten ausgeblendet werden sollen, wenn Du das Bloghosting-Plugin verwendest und ob Du Webseiten ausblenden möchtest, die auf Privat eingestellt sind. 
+ 4\. Wähle den gewünschten Titel für Deine Verzeichnisseite aus. 
+ 5\. Wähle aus, ob Du Webseiten-Beschreibungen ein- oder ausblenden möchtest.  
+ 6\. Passe die Hintergrund- und Rahmenfarben an.
 
- **Searching for a site is a real snap too.** 1\. Go to your new Site Directory, and click on the site you want to check out. 2\. Or use the built-in search feature that enables your users to find exactly what they are looking for on your network. They can even search for individual words in the site names or descriptions. Say, for example, you just know there's a cool site in the network with a bunch of drawing tutorials, but can't remember the name. No problem, simply enter a likely word in the search form, and all sites containing that word will be returned in the results. How cool is that? 
+ **Auch die Suche nach einer Webseite ist ein Kinderspiel.** 1\. Gehe zu Deinem neuen Blogs-Verzeichnis und klicke auf die Website, die Du auschecken möchtest. 2\. Oder nutze die integrierte Suchfunktion, die es Deinen Benutzern ermöglicht, in Deinem Netzwerk genau das zu finden, was sie suchen. Sie können sogar nach einzelnen Wörtern in den Namen oder Beschreibungen der Webseiten suchen. Angenommen, sie wissen einfach, dass es im Netzwerk eine tolle Seite mit einer Reihe von Zeichenanleitungen gibt, können sich aber nicht an den Namen erinnern. Kein Problem, sie geben einfach ein wahrscheinliches Wort in das Suchformular ein und alle Webseiten, die dieses Wort enthalten, werden in den Ergebnissen zurückgegeben. Wie cool ist das?
 
-![blogs-directory-search](https://premium.wpmudev.org/wp-content/uploads/2009/09/blogs-directory-search.png)
+![blogs-directory-search](https://n3rds.work/wp-content/uploads/2023/12/blogs-directory-search.png)
 
-### Customization
+### Anpassung
 
-You can change the page slug used by Blogs Directory by opening blogs-directory.php and editing the slug on line 37, which by default reads as follows: define('BLOGS_DIRECTORY_SLUG', 'your-slug');
+Du kannst den von Blogs Directory verwendeten Seiten-Slug ändern, indem Du blogs-directory.php öffnest und den Slug in Zeile 45 bearbeitest, der standardmäßig wie folgt lautet: define('BLOGS_DIRECTORY_SLUG', 'your-slug');

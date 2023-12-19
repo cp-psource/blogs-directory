@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: MS-Blogs-Verzeichnis
-Plugin URI: https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/
+Plugin URI: https://n3rds.work/wiki/piestingtal-source/blogs-verzeichnis/
 Description: Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller Blogs auf Deiner ClassicPress Multisite.
 Author: WMS N@W
 Author URI: https://n3rds.work
-Version: 1.2.2
+Version: 1.0.0
 Text Domain: blogs-directory
 Network: true
 */
@@ -68,7 +68,7 @@ add_action('admin_init', 'blogs_directory_save_options');
 
 //Network admin menu
 function blogs_directory_admin_page() {
-        add_submenu_page( 'settings.php',  __( 'Webseiten-Verzeichnis', 'blogs-directory' ), __( 'Webseiten-Verzeichnis', 'blogs-directory' ), 'manage_network_options', 'blog-directory-settings', 'blogs_directory_site_admin_options' );
+        add_submenu_page( 'settings.php',  __( 'Blogs-Verzeichnis', 'blogs-directory' ), __( 'Blogs-Verzeichnis', 'blogs-directory' ), 'manage_network_options', 'blog-directory-settings', 'blogs_directory_site_admin_options' );
         // $page = add_submenu_page( 'blog-directory', __( 'Settings', 'blogs-directory' ), __( 'Settings', 'blogs-directory' ), 'manage_network_options', 'blog-directory-settings', 'blogs_directory_site_admin_options' );
 }
 
@@ -141,7 +141,7 @@ function blogs_directory_site_admin_options() {
         ?><div id="message" class="updated fade"><p><?php echo $msg; ?></p></div><?php
     }
     ?>
-    <h2><?php _e('Seiten-Verzeichnis Einstellungen','blogs-directory') ?></h2>
+    <h2><?php _e('Blogs-Verzeichnis Einstellungen','blogs-directory') ?></h2>
     <form method="post" name="" >
 		<?php wp_nonce_field('save-site-directory', '_wp_nonce', $_SERVER['PHP_SELF']); ?>
 		<table class="form-table">
