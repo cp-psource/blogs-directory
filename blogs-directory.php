@@ -5,7 +5,7 @@ Plugin URI: https://n3rds.work/wiki/piestingtal-source/blogs-verzeichnis/
 Description: Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller Blogs auf Deiner ClassicPress Multisite.
 Author: WMS N@W
 Author URI: https://n3rds.work
-Version: 1.0.0
+Version: 1.0.1
 Text Domain: blogs-directory
 Network: true
 */
