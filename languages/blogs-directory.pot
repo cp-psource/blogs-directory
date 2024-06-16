@@ -188,7 +188,7 @@ msgstr ""
 
 #. Plugin URI of the plugin/theme
 msgid ""
-"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+"https://github.com/cp-psource/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -199,9 +199,9 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "WMS N@W"
+msgid "PSOURCE"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://n3rds.work"
+msgid "https://github.com/cp-psource"
 msgstr ""

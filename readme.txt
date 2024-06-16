@@ -1,10 +1,9 @@
 === MS-Blogs-Verzeichnis ===
-Contributors: DerN3rd (WMS N@W)
-Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
+Contributors: DerN3rd (PSOURCE)
 Tags: multisite, blogs, verzeichnis, classicpress, wordpress, psource
 Requires at least: 3.8
 Tested up to: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -31,7 +30,7 @@ Es sollte automatisch eine Seite mit dem Namen „Sites“ auf Deiner Hauptseite
 
 Du kannst den von Blogs Directory verwendeten Seiten-Slug ändern, indem Du blogs-directory.php öffnest und den Slug in Zeile 45 bearbeitest, der standardmäßig wie folgt lautet: define('BLOGS_DIRECTORY_SLUG', 'your-slug');
 
-[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
+[POWERED BY PSOURCE](https://github.com/cp-psource/)
 
 [GitHub](https://github.com/cp-psource/blogs-directory)
 
@@ -39,20 +38,20 @@ Du kannst den von Blogs Directory verwendeten Seiten-Slug ändern, indem Du blog
 
 = Gib Deinen Kunden vollständige Blogvorlagen an die Hand =
 
-[Dank Blogvorlagen können Deine User sofort losbloggen](https://n3rds.work/shop/artikel/ps-bloghosting-plugin/)
+[Dank Blogvorlagen können Deine User sofort losbloggen](https://github.com/cp-psource/shop/artikel/ps-bloghosting-plugin/)
 
 Mit Neue Blog-Vorlagen kannst Du einen Katalog mit Webseiten-Vorlagen erstellen, um die Produktivität erheblich zu verbessern.
 Verwende das Design und den Inhalt vorhandener Webseiten in Deinem Multisite-Netzwerk, um unglaublich schnell neue Webseiten zu erstellen.
 
 = Volle Kontrolle über Inhalts-Vorlagen =
 
-[Mit dem Multisite Content Kopierer](https://n3rds.work/piestingtal_source/multisite-content-kopierer/)
+[Mit dem Multisite Content Kopierer](https://github.com/cp-psource/piestingtal_source/multisite-content-kopierer/)
 
 Multisite Content Kopierer ist die perfekte Lösung zum Kopieren von Beiträgen, Seiten, Benutzern und sogar Plugins auf andere Seiten in Deinem Multisite-Netzwerk.
 
 = Klone Einstellungen und Rechte =
 
-[Cloner ergänzt Bloghosting und Blogvorlagen vollständig.](https://n3rds.work/piestingtal_source/cloner-klone-inhalte-in-multisite-per-mausklick/)
+[Cloner ergänzt Bloghosting und Blogvorlagen vollständig.](https://github.com/cp-psource/piestingtal_source/cloner-klone-inhalte-in-multisite-per-mausklick/)
 
 Cloner kopiert jede WordPress-Webseite in Deinem Multisite-Netzwerk und verschiebt sie mit einem Klick auf eine beliebige URL im selben Netzwerk.
 Designänderungen vorzunehmen, eine neue Codezeile hinzuzufügen oder Dein Theme auf einer Live-Site zu optimieren, ist ein riskantes Geschäft. 
@@ -66,9 +65,9 @@ Perfekt für die Verwaltung von Live-Webseiten.
 
 = Finde mehr Piestingtal.Source =
 
-Wirf einen Blick in unser [PSOURCE Sortiment](https://n3rds.work/psource_kategorien/psource-plugins/) und hole noch mehr aus Deinem WordPress/ClassicPress!
+Wirf einen Blick in unser [PSOURCE Sortiment](https://github.com/cp-psource/psource_kategorien/psource-plugins/) und hole noch mehr aus Deinem WordPress/ClassicPress!
 
-Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
+Halte Dich mit unserem [Newsletter](https://github.com/cp-psource/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
 
 == Hilf uns ==
 
@@ -77,11 +76,15 @@ Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Pl
 
 = Unterstütze uns =
 
-Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
+Mach eine [Spende per Überweisung oder PayPal](https://github.com/cp-psource/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
 
-Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
+Halte Dich mit unserem [Newsletter](https://github.com/cp-psource/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
 
 == ChangeLog ==
+
+= 1.0.2 =
+
+* PSOURCE Updater 1.3
 
 = 1.0.1 =
 

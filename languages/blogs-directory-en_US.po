@@ -211,9 +211,9 @@ msgstr "Blogs directory"
 #. Plugin URI of the plugin/theme
 #, fuzzy
 msgid ""
-"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+"https://github.com/cp-psource/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
 msgstr ""
-"https://n3rds.work/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
+"https://github.com/cp-psource/wiki/piestingtal-source-wiki/blogs-verzeichnis-plugin/"
 
 #. Description of the plugin/theme
 #, fuzzy
@@ -228,10 +228,10 @@ msgstr ""
 
 #. Author of the plugin/theme
 #, fuzzy
-msgid "WMS N@W"
-msgstr "WMS N@W"
+msgid "PSOURCE"
+msgstr "PSOURCE"
 
 #. Author URI of the plugin/theme
 #, fuzzy
-msgid "https://n3rds.work"
-msgstr "https://n3rds.work"
+msgid "https://github.com/cp-psource"
+msgstr "https://github.com/cp-psource"

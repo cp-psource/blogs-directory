@@ -1,17 +1,17 @@
 <?php
 /*
 Plugin Name: MS-Blogs-Verzeichnis
-Plugin URI: https://n3rds.work/wiki/piestingtal-source/blogs-verzeichnis/
+Plugin URI: https://cp-psource.github.io/blogs-directory/
 Description: Dieses Plugin bietet ein paginiertes, vollständig durchsuchbares, Avatar inklusive, automatisches und ziemlich gut aussehendes Verzeichnis aller Blogs auf Deiner ClassicPress Multisite.
-Author: WMS N@W
-Author URI: https://n3rds.work
-Version: 1.0.1
+Author: PSOURCE
+Author URI: https://github.com/cp-psource
+Version: 1.0.2
 Text Domain: blogs-directory
 Network: true
 */
 
 /*
-Copyright 2019-2024 WMS N@W (https://n3rds.work)
+Copyright 2019-2024 PSOURCE (https://github.com/cp-psource)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
@@ -49,13 +49,6 @@ $myUpdateChecker->setBranch('master');
 /**
  * @@@@@@@@@@@@@@@@@ ENDE PS UPDATER 1.3 @@@@@@@@@@@
  **/
-require 'psource/psource-plugin-update/psource-plugin-updater.php';
-use Psource\PluginUpdateChecker\v5\PucFactory;
-$MyUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=blogs-directory', 
-	__FILE__, 
-	'blogs-directory' 
-);
 
 if (defined('BLOGS_DIRECTORY_SLUG')) {
 	$blogs_directory_base = BLOGS_DIRECTORY_SLUG;
