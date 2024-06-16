@@ -31,6 +31,24 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //---Config---------------------------------------------------------------//
 //------------------------------------------------------------------------//
 
+/**
+ * @@@@@@@@@@@@@@@@@ PS UPDATER 1.3 @@@@@@@@@@@
+ **/
+require 'psource/psource-plugin-update/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+ 
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/cp-psource/blogs-directory',
+	__FILE__,
+	'blogs-directory'
+);
+ 
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
+
+/**
+ * @@@@@@@@@@@@@@@@@ ENDE PS UPDATER 1.3 @@@@@@@@@@@
+ **/
 require 'psource/psource-plugin-update/psource-plugin-updater.php';
 use Psource\PluginUpdateChecker\v5\PucFactory;
 $MyUpdateChecker = PucFactory::buildUpdateChecker(
